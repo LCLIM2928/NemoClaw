@@ -33,5 +33,3 @@ primary_region = "sin"  # Singapore (close to MY)
   source = "nemoclaw_data"
   destination = "/data"  # For memory/*.md persistence
 
-[restart]
-  policy = "always"
