@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>NemoClaw</title></head>
+<body>
+  <h1>NemoClaw is Running!</h1>
+  <p>Backend: <span id="status">Checking...</span></p>
+  <script>
+    fetch('/health')
+      .then(r => r.json())
+      .then(d => document.getElementById('status').innerText = 'OK')
+      .catch(e => document.getElementById('status').innerText = 'Error');
+  </script>
+</body>
+</html>
